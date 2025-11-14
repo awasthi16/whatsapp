@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_BASE = process.env.REACT_APP_API_URL || "https://whatsapp-backend-en5o.onrender.com";
 
 const api = axios.create({
   baseURL: API_BASE,
@@ -12,3 +12,8 @@ api.interceptors.request.use((config) => {
 });
 
 export default api;
+
+
+// https://whatsapp-backend-delta.vercel.app/
+
+// const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000";
